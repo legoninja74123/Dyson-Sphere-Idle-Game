@@ -1,13 +1,53 @@
 Let's make a game!
-   name: Make a Dyson Sphere
-   desc: Create your very own dyson sphere!
-   created: 05/14/2021
-   version: 1
+      name:Make a Dyson Sphere
+      desc:Create your very own dyson sphere!
+      created: 05/14/2021
+      version: 1
 Settings
-   background: https://wallpaperaccess.com/full/4499750.png
-   building cost increase:100%
-   building cost refund:80%
-  
+       background: https://wallpaperaccess.com/full/4499750.png
+       building cost increase:100%
+       building cost refund:80%
+ 
 Layout
-   use default
-   
+ 
+       use default
+ 
+Buttons
+      *metalButton
+          name:Mine Rock
+          desc: Create Metal
+          on click:yield 1 rawMetal
+ 
+Resources
+      *rock
+         name:Mercury Rock
+         show earned
+ 
+      *iron
+         name:Refined Iron
+         show earned
+         
+       *silicon
+         name:Refined Iron
+         show earned
+       
+       *energy
+         name:Energy
+         show earned
+      
+ 
+Buildings
+      *refiner
+        name:Material Refiner
+		cost:10
+		on tick: 
+			if (rawMetal>=10) 
+				lose 10 rawMetal 
+				yield 8 refinedMetal 
+			else 
+			end 
+		end
+      
+      *miner
+         name:Bucket-wheel Excavator
+         
