@@ -1,11 +1,11 @@
 Let's make a game!
    name: Make a Dyson Sphere
-   author:Chunks1
-   desc:Create your very own dyson sphere!
-   created:05/14/2021
-   version:1
+   author: Chunks1
+   desc: Create your very own dyson sphere!
+   created: 05/14/2021
+   version: 1
 Settings
-   background:https://wallpaperaccess.com/full/4499750.png
+   background: https://wallpaperaccess.com/full/4499750.png
    building cost increase:100%
    building cost refund:80%
   
