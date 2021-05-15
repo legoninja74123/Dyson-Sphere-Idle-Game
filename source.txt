@@ -1,6 +1,5 @@
 Let's make a game!
    name: Make a Dyson Sphere
-   author: Chunks1
    desc: Create your very own dyson sphere!
    created: 05/14/2021
    version: 1
