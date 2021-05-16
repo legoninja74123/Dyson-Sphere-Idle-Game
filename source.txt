@@ -13,7 +13,7 @@ Layout
        use default
  
 Buttons
-      *
+      *bigMiner
           name:Bagger 3,000
           desc:The largest bucket wheel excevator to ever be created, it is as big as it can possibly be with Mercury's gravity, but theres only one.
           on click:yield 
