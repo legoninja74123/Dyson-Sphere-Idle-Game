@@ -13,41 +13,64 @@ Layout
        use default
  
 Buttons
-      *metalButton
-          name:Mine Rock
-          desc: Create Metal
-          on click:yield 1 rawMetal
+      *
+          name:Bagger 3,000
+          desc:The largest bucket wheel excevator to ever be created, it is as big as it can possibly be with Mercury's gravity, but theres only one.
+          on click:yield 
  
 Resources
       *rock
-         name:Mercury Rock
+         name:Tonnes of Mercury Rock
          show earned
  
       *iron
-         name:Refined Iron
+         name:Iron
          show earned
          
        *silicon
-         name:Refined Iron
+         name:Silicon
          show earned
        
        *energy
-         name:Energy
+         name:Gigawatts
          show earned
+	 
+       *mercury
+       	 name:Mercury
+	 
       
  
 Buildings
+
+      *sattelite
+      	name:Sattelite
+	desc:The sattelites that will orbit the Sun.
+	on tick: yield 0.003561 energy
+	
+      *sattelite1
+      	name:Mercury's Sattelites
+	desc:A square kilometer of sattelites in orbit to get started.
+	on tick:yield 0.000088 energy
+	start with:1
+	no buy
+	
       *refiner
         name:Material Refiner
-		cost:10
+		cost:10 iron
+		start with:1
 		on tick: 
-			if (rawMetal>=10) 
-				lose 10 rawMetal 
-				yield 8 refinedMetal 
+			if (rock>=25) 
+				lose 25 rock
+				yield 7 silicon
+				yield 16 iron
+				
 			else 
 			end 
 		end
+	
       
       *miner
          name:Bucket-wheel Excavator
+	 cost: 10 iron
+	 on tick:yield 18 rock
          
