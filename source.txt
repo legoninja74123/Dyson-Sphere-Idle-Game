@@ -32,7 +32,7 @@ Resources
          show earned
        
        *energy
-         name:Gigawatts
+         name:Kilowatts
          show earned
 	 
        *mercury
@@ -45,12 +45,12 @@ Buildings
       *sattelite
       	name:Sattelite
 	desc:The sattelites that will orbit the Sun.
-	on tick: yield 0.003561 energy
+	on tick: yield 3561 energy
 	
       *sattelite1
       	name:Mercury's Sattelites
 	desc:A square kilometer of sattelites in orbit to get started.
-	on tick:yield 0.000088 energy
+	on tick:yield 88 energy
 	start with:1
 	no buy
 	
