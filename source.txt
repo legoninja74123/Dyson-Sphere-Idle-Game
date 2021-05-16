@@ -45,7 +45,7 @@ Buildings
       *sattelite
       	name:Sattelite
 	desc:The sattelites that will orbit the Sun.
-	on tick: yield 3561 energy
+	on tick:yield 3561 energy
 	
       *sattelite1
       	name:Mercury's Sattelites
@@ -71,6 +71,6 @@ Buildings
       
       *miner
          name:Bucket-wheel Excavator
-	 cost: 10 iron
+	 cost:10 iron
 	 on tick:yield 18 rock
          
