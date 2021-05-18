@@ -18,6 +18,8 @@ Buttons
           desc:The largest bucket wheel excevator to ever be created, it is as big as it can possibly be with Mercury's gravity, but theres only one.
           on click:yield 1800 rock
 	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Bagger%203000.png
+	  class:bigButton hasFlares
+	  icon class:shadowed
  
 Resources
       *rock
