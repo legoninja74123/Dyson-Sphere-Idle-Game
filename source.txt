@@ -17,26 +17,39 @@ Buttons
           name:Bagger 3,000
           desc:The largest bucket wheel excevator to ever be created, it is as big as it can possibly be with Mercury's gravity, but theres only one.
           on click:yield 1800 rock
+	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Bagger%203000.png
  
 Resources
       *rock
          name:Tonnes of Mercury Rock
          show earned
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Soil.png
  
       *iron
          name:Iron
          show earned
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Iron.png
          
        *silicon
          name:Silicon
          show earned
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Silicon.png
        
        *energy
          name:Kilowatts
          show earned
-	 
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Energy.png
+      
+      *unlaunched
+       name:Unlaunched Mirrors
+       show earned
+       icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Unlaunched%20mirror.png
+
        *mercury
        	 name:Mercury
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Mercury.png
+	 
+	
 	 
       
  
@@ -46,6 +59,7 @@ Buildings
       	name:Solar Collectors
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png
 	
 	
       *sattelite1
@@ -54,6 +68,7 @@ Buildings
 	on tick:yield 88 energy
 	start with:1
 	no buy
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png
 	
       *refiner
         name:Material Refiner
@@ -68,14 +83,18 @@ Buildings
 			else 
 			end 
 		end
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png
 	
       *maker
       name:Producer
+      icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Producer.png
       
       *miner
          name:Bucket-wheel Excavator
 	 cost:10 iron and 10 energy
 	 on tick:yield 18 rock
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png
       
       *launcher
 	name:Coil Launching System 
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Coil%20gun.png
