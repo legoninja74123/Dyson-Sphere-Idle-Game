@@ -11,6 +11,13 @@ Settings
 Layout
  
        use default
+       
+CSS
+  .thing-icon,.particle
+  {
+    width:128px;
+    height:128px;
+  }
  
 Buttons
       *bigMiner
@@ -25,31 +32,31 @@ Resources
       *rock
          name:Tonnes of Mercury Rock
          show earned
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Soil.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Soil.png?raw=true
  
       *iron
          name:Iron
          show earned
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Iron.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Iron.png?raw=true
          
        *silicon
          name:Silicon
          show earned
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Silicon.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Silicon.png?raw=true
        
        *energy
          name:Kilowatts
          show earned
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Energy.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Energy.png?raw=true
       
       *unlaunched
        name:Unlaunched Mirrors
        show earned
-       icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Unlaunched%20mirror.png
+       icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Unlaunched%20mirror.png?raw=true
 
        *mercury
        	 name:Mercury
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Mercury.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Mercury.png?raw=true
 	 
 	
 	 
@@ -61,7 +68,7 @@ Buildings
       	name:Solar Collectors
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
-	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
 	
 	
       *sattelite1
@@ -70,7 +77,7 @@ Buildings
 	on tick:yield 88 energy
 	start with:1
 	no buy
-	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
 	
       *refiner
         name:Material Refiner
@@ -85,18 +92,18 @@ Buildings
 			else 
 			end 
 		end
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
 	
       *maker
       name:Producer
-      icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Producer.png
+      icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Producer.png?raw=true
       
       *miner
          name:Bucket-wheel Excavator
 	 cost:10 iron and 10 energy
 	 on tick:yield 18 rock
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png?raw=true
       
       *launcher
 	name:Coil Launching System 
-	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Coil%20gun.png
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Coil%20gun.png?raw=true
