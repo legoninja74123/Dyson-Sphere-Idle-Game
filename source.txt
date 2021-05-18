@@ -42,10 +42,11 @@ Resources
  
 Buildings
 
-      *sattelite
-      	name:Sattelite
+      *collector
+      	name:Solar Collectors
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
+	
 	
       *sattelite1
       	name:Mercury's Sattelites
@@ -56,7 +57,7 @@ Buildings
 	
       *refiner
         name:Material Refiner
-		cost:10 iron
+		cost:
 		start with:1
 		on tick: 
 			if (rock>=25) 
@@ -68,9 +69,13 @@ Buildings
 			end 
 		end
 	
+      *maker
+      name:Producer
       
       *miner
          name:Bucket-wheel Excavator
-	 cost:10 iron
+	 cost:10 iron and 10 energy
 	 on tick:yield 18 rock
-         
+      
+      *launcher
+	name:Coil Launching System 
