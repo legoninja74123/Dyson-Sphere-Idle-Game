@@ -33,16 +33,19 @@ Resources
          name:Tonnes of Mercury Rock
          show earned
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Soil.png?raw=true
+	 hidden when 0
  
       *iron
          name:Iron
          show earned
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Iron.png?raw=true
+	 hidden when 0
          
        *silicon
          name:Silicon
          show earned
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Silicon.png?raw=true
+	 hidden when 0
        
        *energy
          name:Kilowatts
@@ -53,6 +56,7 @@ Resources
        name:Unlaunched Mirrors
        show earned
        icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Unlaunched%20mirror.png?raw=true
+       hidden when 0
 
        *mercury
        	 name:Mercury
@@ -65,7 +69,7 @@ Resources
 Buildings
 
       *collector
-      	name:Solar Collectors
+      	name:Solar Mirrors
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
