@@ -77,7 +77,7 @@ Buildings
 	no buy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
 
- *miner
+      *miner
          name:Bucket-wheel Excavator
 	 cost:10 iron
 	 on tick: 
