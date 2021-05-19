@@ -61,25 +61,24 @@ Resources
 
        *mercury
        	 name:Mercury
+	 desc:The amount of Mercury that you have mined
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Mercury.png?raw=true
-	 
-	
-	 
-      
- 
+	 is always:(rock)/328500000000000000000
+
 Buildings
 
       *sattelite1
       	name:Mercury's Sattelites
-	desc:A square kilometer of sattelites in orbit to get started.
+	desc:A square kilometer of sattelites in orbit to get you started.
 	on tick:yield 88 energy
 	start with:1
-	no buy
+	cost: 10000 silicon and 1000 iron and
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
 
       *miner
          name:Bucket-wheel Excavator
-	 cost:10 iron
+	 desc:The space equilivant of the Bagger 288!
+	 cost:13000 iron and 30000 energy
 	 on tick: 
 	         yield 18 rock
 	 	 lose 5 energy
@@ -88,12 +87,14 @@ Buildings
 
       *refiner
         name:Material Refiner
-		cost:
+	desc:Refines the Mercury soil into valuable materials like iron and silicon.
+		cost:20000 iron and 4000 silicon and 35000 energy
 		on tick: 
-			if (rock>=25) 
+			if (rock>=25 and energy>=10) 
 				lose 25 rock
 				yield 7 silicon
 				yield 16 iron
+				lose 10 energy
 			end 
 		end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
@@ -101,37 +102,44 @@ Buildings
 	
       *maker
         name:Producer
+	desc:Takes your refined materials and fabricates your packaged mirrors.
         icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Producer.png?raw=true
-	cost:
+	cost:25000 iron and 8000 silicon and 70000 energy
 	on tick: 
-		if (iron>=2666 and silicon>=666) 
+		if (iron>=2666 and silicon>=666 and energy>=25) 
 			lose 2666 iron
 			lose 666 silicon
 			yield 1 unlaunched
+			lose 25 energy
 		end 
 	end
 	req:1 refiner
       
       *launcher
 	name:Coil Launching System 
+	desc:Using electromagnets, this baby launches your 3000 ton sattelites into the orbit of the Sun.
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Coil%20gun.png?raw=true
-	cost:
+	cost:70000 iron and 5000 silicon and 120000 energy
 	on tick: 
-		if (unlaunched>=1) 
+		if (unlaunched>=1 and energy>=100000) 
 			lose 1 unlaunched
 			yield 1 collector 
+			lose 100000 energy
 		end 
 	end
 	req:1 maker
 	
 	*collector
       	name:Solar Mirrors
-	desc:The sattelites that will orbit the Sun.
+	desc:The sattelites that will orbit the Sun. They beam sunlight back to your Mercury orbiting solar panels.
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
 	no buy
 	start with:1
-	req:2 collector
+	on start:
+		lose 1 collector
+	end
+	req:1 collector
 	
 	*dyson
 	name:Dyson Sphere
