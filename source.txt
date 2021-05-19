@@ -61,9 +61,9 @@ Resources
 
        *mercury
        	 name:Mercury
-	 desc:The amount of Mercury that you have mined
+	 desc:The tonnes of Mercury that are left.
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Mercury.png?raw=true
-	 is always:(rock)/328500000000000000000
+	 is always:328500000000000000000-(rock)
 
 Buildings
 
@@ -72,7 +72,7 @@ Buildings
 	desc:A square kilometer of sattelites in orbit to get you started.
 	on tick:yield 88 energy
 	start with:1
-	cost:10000 silicon and 1000 iron and 5000 energy
+	cost:7000 silicon and 1000 iron and 5000 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
 
       *miner
