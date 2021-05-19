@@ -72,7 +72,7 @@ Buildings
 	desc:A square kilometer of sattelites in orbit to get you started.
 	on tick:yield 88 energy
 	start with:1
-	cost: 10000 silicon and 1000 iron and
+	cost: 10000 silicon and 1000 iron and 5000 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
 
       *miner
