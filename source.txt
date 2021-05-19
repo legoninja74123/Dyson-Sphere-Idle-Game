@@ -28,6 +28,21 @@ Buttons
 	  class:bigButton hasFlares
 	  icon class:shadowed
 	  no text
+      *bigRefiner
+          name:Mega Refiner
+          desc:A massive Refiner that turns rock into metal.
+          on click: 
+			if (rock>=2500 and energy>=1000) 
+				lose 2500 rock
+				yield 700 silicon
+				yield 1600 iron
+				lose 1000 energy
+			end 
+		end
+	  icon:
+	  class:bigButton hasFlares
+	  icon class:shadowed
+	  no text
  
 Resources
       *rock
