@@ -17,6 +17,15 @@ CSS
     width:128px;
     height:128px;
   }
+  .thing
+  {
+    border-radius:8px;
+    background:rgba(255,255,255,0.5);
+  }
+  .bigRefiner
+  {
+   position:absolute; left:80px
+  }
  
 Buttons
       *bigMiner
