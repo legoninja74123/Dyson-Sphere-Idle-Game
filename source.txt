@@ -22,13 +22,9 @@ CSS
     border-radius:8px;
     background:rgba(255,255,255,0.5);
   }
-  .bigRefiner
+  .buttons
   {
-   position:absolute; left:80px
-  }
-  .bigMiner
-  {
-   position:absolute; right:80px
+   position:absolute; left:80px; top:10
   }
  
 Buttons
