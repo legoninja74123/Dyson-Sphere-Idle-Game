@@ -98,7 +98,7 @@ Buildings
 			end 
 		end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
-	 req:1 miner
+	 start with:1
 	
       *maker
         name:Producer
