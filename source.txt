@@ -74,6 +74,7 @@ Buildings
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
+	start with 0
 	no buy
 	
 	
