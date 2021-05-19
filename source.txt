@@ -140,3 +140,4 @@ Buildings
 	name:Dyson Sphere
 	on tick:yield 384600000000000000000000 energy
 	cost:30000000000000000 collector
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Dyson%20Sphere.png?raw=true
