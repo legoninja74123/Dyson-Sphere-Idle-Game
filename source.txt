@@ -89,7 +89,6 @@ Buildings
       *refiner
         name:Material Refiner
 		cost:
-		start with:1
 		on tick: 
 			if (rock>=25) 
 				lose 25 rock
@@ -98,6 +97,7 @@ Buildings
 			end 
 		end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
+	 req:1 mienr
 	
       *maker
         name:Producer
@@ -110,6 +110,7 @@ Buildings
 			yield 1 unlaunched
 		end 
 	end
+	req:1 refiner
       
       *launcher
 	name:Coil Launching System 
@@ -121,14 +122,16 @@ Buildings
 			yield 1 collector 
 		end 
 	end
+	req:1 maker
 	
 	*collector
       	name:Solar Mirrors
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
-	start with:0
 	no buy
+	start with:1
+	req:2 collector
 	
 	*dyson
 	name:Dyson Sphere
