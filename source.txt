@@ -102,7 +102,7 @@ Buildings
 			end 
 		end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
-	 start with:10
+	 start with:5
 	
       *maker
         name:Producer
