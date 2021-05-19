@@ -9,8 +9,9 @@ Settings
        building cost refund:80%
  
 Layout
- 
        use default
+       *buttons
+       		contains:Buttons
        
 CSS
   .thing-icon,.particle
