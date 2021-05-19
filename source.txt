@@ -27,6 +27,7 @@ Buttons
 	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Bagger%203000.png?raw=true
 	  class:bigButton hasFlares
 	  icon class:shadowed
+	  no text
  
 Resources
       *rock
@@ -73,6 +74,7 @@ Buildings
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
+	no buy
 	
 	
       *sattelite1
@@ -92,22 +94,46 @@ Buildings
 				lose 25 rock
 				yield 7 silicon
 				yield 16 iron
-				
+			
 			else 
 			end 
 		end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
 	
       *maker
-      name:Producer
-      icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Producer.png?raw=true
+        name:Producer
+        icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Producer.png?raw=true
+	cost:
+	on tick: 
+		if (iron>=2666 and silicon>=666) 
+			lose 2666 iron
+			lose 666 silicon
+			yield 1 unlaunched
+			
+		else 
+		end 
+	end
       
       *miner
          name:Bucket-wheel Excavator
-	 cost:10 iron and 10 energy
-	 on tick:yield 18 rock
+	 cost:10 iron
+	 on tick:yield 18 rock and lose
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png?raw=true
       
       *launcher
 	name:Coil Launching System 
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Coil%20gun.png?raw=true
+	cost:
+	on tick: 
+		if (unlaunched>=1) 
+			lose 1 unlaunched
+			yield 1 collector
+			
+		else 
+		end 
+	end
+	
+	*dyson
+	name:Dyson Sphere
+	on tick:yield 384600000000000000000000 energy
+	cost:1 collector
