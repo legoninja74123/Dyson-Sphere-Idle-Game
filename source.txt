@@ -118,7 +118,10 @@ Buildings
       *miner
          name:Bucket-wheel Excavator
 	 cost:10 iron
-	 on tick:yield 18 rock and lose 5 energy
+	 on tick: 
+	         yield 18 rock
+	 	 lose 5 energy
+	 end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png?raw=true
       
       *launcher
