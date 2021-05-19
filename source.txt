@@ -24,18 +24,11 @@ CSS
   }
  
 Buttons
-      *bigRefiner
-          name:Mega Refiner
-          desc:A massive Refiner that turns rock into metal. Requires 2500 tonnes of Mercury rock and 1000 Kilowatts to be clicked.
-          on click: 
-			if (rock>=2500 and energy>=1000) 
-				lose 2500 rock
-				yield 700 silicon
-				yield 1600 iron
-				lose 1000 energy
-			end 
-		end
-	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
+      *bigMiner
+          name:Bagger 3000
+          desc:Much larger than its counterpart, the Bagger 3000 is as large as it can be on Mercury's surface.
+          on click:yield 1800 rock
+	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Bagger%203000.png?raw=true
 	  class:bigButton hasFlares
 	  icon class:shadowed
 	  no text
