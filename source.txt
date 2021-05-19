@@ -29,7 +29,7 @@ Buttons
 	  no text
       *bigRefiner
           name:Mega Refiner
-          desc:A massive Refiner that turns rock into metal.
+          desc:A massive Refiner that turns rock into metal. Requires 2500 tonnes of Mercury rock and 1000 Kilowatts to be clicked.
           on click: 
 			if (rock>=2500 and energy>=1000) 
 				lose 2500 rock
@@ -38,8 +38,8 @@ Buttons
 				lose 1000 energy
 			end 
 		end
-	  icon:
-	  class:hasFlares
+	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
+	  class:bigButton hasFlares
 	  icon class:shadowed
 	  no text
  
