@@ -72,13 +72,13 @@ Buildings
 	desc:A square kilometer of sattelites in orbit to get you started.
 	on tick:yield 88 energy
 	start with:1
-	cost: 10000 silicon and 1000 iron and 5000 energy
+	cost:10000 silicon and 1000 iron and 5000 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
 
       *miner
          name:Bucket-wheel Excavator
 	 desc:The space equilivant of the Bagger 288!
-	 cost:13000 iron and 30000 energy
+	 cost:2500 iron and 7000 energy
 	 on tick: 
 	         yield 18 rock
 	 	 lose 5 energy
@@ -88,7 +88,7 @@ Buildings
       *refiner
         name:Material Refiner
 	desc:Refines the Mercury soil into valuable materials like iron and silicon.
-		cost:20000 iron and 4000 silicon and 35000 energy
+		cost:5000 iron and 500 silicon and 10000 energy
 		on tick: 
 			if (rock>=25 and energy>=10) 
 				lose 25 rock
