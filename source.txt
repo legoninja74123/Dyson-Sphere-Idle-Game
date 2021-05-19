@@ -40,7 +40,7 @@ Buttons
 			end 
 		end
 	  icon:
-	  class:bigButton hasFlares
+	  class:hasFlares
 	  icon class:shadowed
 	  no text
  
