@@ -74,7 +74,7 @@ Buildings
 	desc:The sattelites that will orbit the Sun.
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
-	start with 0
+	start with:0
 	no buy
 	
 	
@@ -137,16 +137,4 @@ Buildings
 	*dyson
 	name:Dyson Sphere
 	on tick:yield 384600000000000000000000 energy
-	cost:1 collector
-	
-	*test
-	name: Test Building
-	cost:10 energy
-	on tick: 
-		if (energy>=100) 
-			lose 100 energy
-			yield 1 sattelite1
-			
-		else 
-		end 
-	end
+	cost:30000000000000000 collector
