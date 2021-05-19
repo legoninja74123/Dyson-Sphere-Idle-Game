@@ -26,6 +26,10 @@ CSS
   {
    position:absolute; left:80px
   }
+  .bigMiner
+  {
+   position:absolute; right:80px
+  }
  
 Buttons
       *bigMiner
