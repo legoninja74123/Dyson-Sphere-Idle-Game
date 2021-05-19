@@ -10,7 +10,6 @@ Settings
  
 Layout
        use default
-       *buttons
        
 CSS
   .thing-icon,.particle
