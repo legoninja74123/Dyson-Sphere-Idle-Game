@@ -69,15 +69,6 @@ Resources
  
 Buildings
 
-      *collector
-      	name:Solar Mirrors
-	desc:The sattelites that will orbit the Sun.
-	on tick:yield 3561 energy
-	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
-	start with:0
-	no buy
-	
-	
       *sattelite1
       	name:Mercury's Sattelites
 	desc:A square kilometer of sattelites in orbit to get started.
@@ -85,7 +76,16 @@ Buildings
 	start with:1
 	no buy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Sattelite1.png?raw=true
-	
+
+ *miner
+         name:Bucket-wheel Excavator
+	 cost:10 iron
+	 on tick: 
+	         yield 18 rock
+	 	 lose 5 energy
+	 end
+	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png?raw=true
+
       *refiner
         name:Material Refiner
 		cost:
@@ -115,15 +115,6 @@ Buildings
 		end 
 	end
       
-      *miner
-         name:Bucket-wheel Excavator
-	 cost:10 iron
-	 on tick: 
-	         yield 18 rock
-	 	 lose 5 energy
-	 end
-	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Miner.png?raw=true
-      
       *launcher
 	name:Coil Launching System 
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Coil%20gun.png?raw=true
@@ -136,6 +127,14 @@ Buildings
 		else 
 		end 
 	end
+	
+	*collector
+      	name:Solar Mirrors
+	desc:The sattelites that will orbit the Sun.
+	on tick:yield 3561 energy
+	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
+	start with:0
+	no buy
 	
 	*dyson
 	name:Dyson Sphere
