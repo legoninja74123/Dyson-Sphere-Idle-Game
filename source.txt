@@ -34,19 +34,19 @@ Resources
          name:Tonnes of Mercury Rock
          show earned
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Soil.png?raw=true
-	 hidden when 0
+	 req:1 rock
  
       *iron
          name:Iron
          show earned
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Iron.png?raw=true
-	 hidden when 0
+	 req:1 iron
          
        *silicon
          name:Silicon
          show earned
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Silicon.png?raw=true
-	 hidden when 0
+	 req:1 silicon
        
        *energy
          name:Kilowatts
@@ -57,7 +57,7 @@ Resources
        name:Unlaunched Mirrors
        show earned
        icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Unlaunched%20mirror.png?raw=true
-       hidden when 0
+       req:1 unlaunched
 
        *mercury
        	 name:Mercury
@@ -137,3 +137,15 @@ Buildings
 	name:Dyson Sphere
 	on tick:yield 384600000000000000000000 energy
 	cost:1 collector
+	
+	*test
+	name: Test Building
+	cost:10 energy
+	on tick: 
+		if (energy>=100) 
+			lose 100 energy
+			yield 1 sattelite1
+			
+		else 
+		end 
+	end
