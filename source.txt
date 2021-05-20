@@ -78,6 +78,7 @@ Resources
        show earned
        icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Unlaunched%20mirror.png?raw=true
        req:1 unlaunched
+   
 
        *mercury
        	 name:Mercury
@@ -144,7 +145,6 @@ Buildings
 		if (unlaunched>=1 and energy>=100000) 
 			lose 1 unlaunched
 			lose 100000 energy
-			yield 1 mirror
 		end 
 	end
 	req:1 maker
@@ -155,8 +155,9 @@ Buildings
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
 	no buy
-	start with:0
+	start with:1
 	req:1 mirror
+	onstart:lose 1 mirror
 	
 	*dyson
 	name:Dyson Sphere
