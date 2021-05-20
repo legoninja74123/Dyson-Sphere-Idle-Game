@@ -143,13 +143,13 @@ Buildings
 	on tick: 
 		if (unlaunched>=1 and energy>=100000) 
 			lose 1 unlaunched
-			yield 1 collector 
 			lose 100000 energy
+			yield 1 mirror
 		end 
 	end
 	req:1 maker
 	
-	*collector
+	*mirror
       	name:Solar Mirrors
 	desc:The sattelites that will orbit the Sun. They beam sunlight back to your Mercury orbiting solar panels.
 	on tick:yield 3561 energy
