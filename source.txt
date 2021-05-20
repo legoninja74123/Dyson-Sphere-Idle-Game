@@ -94,15 +94,15 @@ Buildings
 	desc:Refines the Mercury soil into valuable materials like iron and silicon.
 		cost:5000 iron and 500 silicon and 10000 energy
 		on tick: 
-			if (rock>=25 and energy>=10) 
-				lose 25 rock
-				yield 7 silicon
-				yield 16 iron
-				lose 10 energy
+			if (rock>=2500 and energy>=1000) 
+				lose 2500 rock
+				yield 700 silicon
+				yield 1600 iron
+				lose 1000 energy
 			end 
 		end
 	 icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
-	 start with:5
+	 start with:1
 	
       *maker
         name:Producer
@@ -140,10 +140,7 @@ Buildings
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
 	no buy
 	start with:1
-	on start:
-		lose 1 collector
-	end
-	req:1 collector
+	req:2 collector
 	
 	*dyson
 	name:Dyson Sphere
