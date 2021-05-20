@@ -45,7 +45,7 @@ Buttons
 			end 
 		end
 	  icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Refiner.png?raw=true
-	  class: hasFlares
+	  class:hasFlares
 	  icon class:shadowed
 	  no text  
  
