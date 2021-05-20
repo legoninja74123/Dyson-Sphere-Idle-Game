@@ -157,7 +157,7 @@ Buildings
 	no buy
 	start with:1
 	req:1 mirror
-	onstart:lose 1 mirror
+	on start:lose 1 mirror
 	
 	*dyson
 	name:Dyson Sphere
