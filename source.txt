@@ -139,8 +139,8 @@ Buildings
 	on tick:yield 3561 energy
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
 	no buy
-	start with:1
-	req:2 collector
+	start with:0
+	req:1 collector
 	
 	*dyson
 	name:Dyson Sphere
