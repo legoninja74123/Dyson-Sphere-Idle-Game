@@ -156,10 +156,10 @@ Buildings
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/mirror.png?raw=true
 	no buy
 	start with:0
-	req:1 collector
+	req:1 mirror
 	
 	*dyson
 	name:Dyson Sphere
 	on tick:yield 384600000000000000000000 energy
-	cost:30000000000000000 collector
+	cost:30000000000000000 mirror
 	icon:https://github.com/legoninja74123/Dyson-Sphere-Idle-Game/blob/main/Dyson%20Sphere.png?raw=true
